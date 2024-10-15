@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="./css/pink.css">
+
+    <!--Live Style Switcher-->
+    <link rel="stylesheet" class="alternate-style" title="blue" type="text/css" href="./css/blue.css" disabled>
+    <link rel="stylesheet"  class="alternate-style" title="green" type="text/css" href="./css/green.css" disabled>
+    <link rel="stylesheet"  class="alternate-style" title="orange" type="text/css" href="./css/orange.css" disabled>
+    <link rel="stylesheet"  class="alternate-style" title="yellow" type="text/css" href="./css/yellow.css" disabled>
+    <link rel="stylesheet"  class="alternate-style" title="pink" type="text/css" href="./css/pink.css">
+    <link rel="stylesheet" type="text/css" href="./css/styleSwitcher.css">
+
+    <title>Jagdish Rathod Portfolio</title>
+    <script>
+        var bleep = new Audio();
+        bleep.src = "./audio/bleep.mp3";
+    </script>
+    <script>
+        var button = new Audio();
+        button.src = "./audio/button-19.mp3";
+    </script>
+    <script>
+        var whistle = new Audio();
+        whistle.src = "./audio/whistle.mp3";
+    </script>
+        <style type="text/css">
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .table-container{
+                padding: 0 10%;
+                margin: 40px auto 0;
+            }
+            .heading{
+                font-size: 40px;
+                text-align: center;
+                color: #f1f1f1;
+                margin-bottom: 40px;
+            }
+            .table{
+                width: 100%;
+                border-collapse: collapse;
+            }
+            .table thead{
+                background-color: #ee2828;
+            }
+            .table thead tr th{
+                font-size: 14px;
+                font-weight: medium;
+                letter-spacing: 0.35px;
+                color: #FFFFFF;
+                opacity: 1;
+                padding: 12px;
+                vertical-align: top;
+                border: 1px solid #dee2e685;
+            }
+            .table tbody tr td{
+                font-size: 14px;
+                letter-spacing: 0.35px;
+                font-weight: normal;
+                color: #f1f1f1;
+                background-color: #3c3f44;
+                padding: 8px;
+                text-align: center;
+                border: 1px solid #dee2e685;
+            }
+            .table tbody tr td .btn{
+                width: 130px;
+                text-decoration: none;
+                line-height: 35px;
+                display: block;
+                background-color: #ff1046;
+                font-weight: medium;
+                color: #FFFFFF;
+                text-align: center;
+                vertical-align: middle;
+                user-select: none;
+                border: 1px solid transparent;
+                font-size: 14px;
+                opacity: 1;
+            }
+    
+    @media (max-width: 768px){
+        .table thread{
+            display: none;
+        }
+        .table, .table tbody,.table tr,.table td{
+            display: block;
+            width: 100%;
+        }
+        .table tr{
+            margin-bottom: 15px;
+        }
+        .table tbody tr td{
+            text-align: right;
+            padding-left: 50%;
+            position: relative;
+        }
+        .table td:before{
+            content: attr(data-label);
+            position: absolute;
+            left: 0;
+            width: 50%;
+            padding-left: 15px;
+            font-weight: 600;
+            font-size: 14px;
+            text-align: left;
+        }
+    }
+    
+        </style>
+</head>
+<body>
+    <!--PreLoader-->
+    <div class="preloader">
+        <div class="loader">
+
+        </div>
+    </div>
+    <!--Preloader End-->
+<!--Main Container-->
+<div class="main-container">
+    <!--Aside-->
+    <div class="aside">
+        <!--Logo-->
+        <div class="logo">
+            <a href="#">JAGDISH</a>
+        </div>
+        <!--Nav Toggler Button-->
+        <div class="nav-toggler" onclick="bleep.play()">
+            <span></span>
+        </div>
+        <!--NAV-->
+        <ul class="nav">
+            <li><a href="#home" onmouseover="bleep.play()" class="active"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="#about" onmouseover="bleep.play()"><i class="fa fa-user"></i> About</a></li>
+            <li><a href="#services" onmouseover="bleep.play()"><i class="fa fa-list"></i> Awards</a></li>
+            <li><a href="#portfolio" onmouseover="bleep.play()"><i class="fa fa-briefcase"></i> Certificates</a></li>
+            <li><a href="#contact" onmouseover="bleep.play()"><i class="fa fa-comments"></i> Contact</a></li>
+        </ul>
+        <!--Copyright-->
+        <div class="copyright-text">
+            &copy; Cyber Security Researcher | JAGDISH RATHOD
+        </div>
+    </div>
+    <!--Aside End-->
+    <!--Main Content-->
+    <div class="main-content">
+        <!--Home Section-->
+        <section class="home section active" id="home"> 
+            <div class="container">
+                <div class="intro">
+                    <img src="./images/gd.png" alt="profile" class="shadow-dark">
+                    <h1>Jagdish Rathod</h1>
+                    <p>Cyber Security Researcher</p><br>
+                    <p>(RClueX)</p>
+                    <div class="social-link">
+                        <a href="https://X.com/rathodjagdish_/" onmouseover="bleep.play()"><i class="fa fa-twitter"></i></a>
+                        <a href="https://github.com/RClueX"><i class="fa fa-github" onmouseover="bleep.play()"></i></a>
+                        <a href="https://www.linkedin.com/in/jagdishkrathod/" onmouseover="bleep.play()"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Home Section End-->
+        <!--About Section-->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>About Me</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="about-content padd-15">
+                        <div class="row">
+                            <div class="about-text padd-15">
+                                <h3>I'm Jagdish Rathod,<span> Cybersecurity Researcher,</span></h3>
+                                <p>I am an Application Security Engineer and bug bounty hunter specializing in mobile app security, web security, API security, and network vulnerability assessment and penetration testing (VAPT). With [2] years of experience, I am dedicated to identifying vulnerabilities and implementing robust security measures to protect applications.
+
+                                    As an active bug bounty hunter, I enjoy the challenge of discovering security flaws and contributing to the security community. I am committed to fostering a security-first mindset in development teams and continuously enhancing my knowledge of emerging threats and security practices.</p>
+                            </div>
+                        </div>
+                         <div class="row">
+                             <div class="personal-info padd-15">
+                                <div class="row">
+                                    <div class="info-item padd-15">
+                                        <p>Birthday : <span>1 September 2000</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                       <p>Age : <span>24</span></p>
+                                   </div>
+                                   <div class="info-item padd-15">
+                                       <p>E-mail : <span>rcluex@gmail.com</span></p>
+                                   </div>
+                                   <div class="info-item padd-15">
+                                       <p>Degree : <span>MSC Cyber Security</span></p>
+                                   </div>
+                                   <div class="info-item padd-15">
+                                       <p>Phone : <span>+91 8263031544</span></p>
+                                   </div>
+                                   <div class="info-item padd-15">
+                                       <p>City : <span>Mumbai</span></p>
+                                   </div>
+                                   <div class="info-item padd-15">
+                                       <p>State : <span>Maharastra</span></p>
+                                   </div>
+                                </div>
+                                <div class="row">
+                                    <div class="buttons padd-15">
+                                        <a href="#" class="btn" onclick="button.play()">Download CV</a>
+                                        <!--<a href="#" class="btn">Hire Me</a>-->
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="skills padd-15">
+                             <div class="row">
+                                 <div class="skill-item padd-15">
+                                     <h5>Mobile App Pentesting</h5>
+                                     <div class="progress">
+                                         <div class="progress-in" style="width: 85%"></div>
+                                         <div class="skill-percent">85%</div>
+                                     </div>
+                                 </div>
+                                 <div class="skill-item padd-15">
+                                    <h5>WebApp Pentesting</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 95%"></div>
+                                        <div class="skill-percent">95%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-item padd-15">
+                                    <h5>Api Pentesting</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 95%"></div>
+                                        <div class="skill-percent">95%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-item padd-15">
+                                    <h5>Network VAPT</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 95%"></div>
+                                        <div class="skill-percent">95%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-item padd-15">
+                                    <h5>Bash Scripting</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 90%"></div>
+                                        <div class="skill-percent">90%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-item padd-15">
+                                    <h5>Python Programming</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 75%"></div>
+                                        <div class="skill-percent">75%</div>
+                                    </div>
+                                </div>
+                             </div>
+                          </div>
+                         </div>
+                         <div class="spacer" style="height: 40px;"></div>
+                         <div class="row">  
+                            <div class="section-title padd-15">
+                                <h2 class="title">Education</h2>
+                                <div class="row">
+                                    <div class="timeline-box padd-15">
+                                        <div class="timeline shadow-dark">
+                                            <!-- Education Item -->
+                                            <div class="timeline-item">
+                                                <div class="circle-dot"></div>
+                                                <h6 class="timeline-date"><i class="fa fa-calendar"></i> 2021 - 2023</h6>
+                                                <h4 class="timeline-title">MSc Cyber Security/Forensics</h4>
+                                                <h5 class="organization-name">Dr. Babasaheb Ambedkar Marathwada University</h5>
+                                                <p class="timeline-text">Completed with a percentage of 79.3% (Grade: A+).</p>
+                                                <p class="timeline-text"><b>Project:</b> Developed CipherSec, a Python tool that generates strong and unique passwords.</p>
+                                            </div>
+                                            <!-- Timeline-item-end -->
+                                            <div class="timeline-item">
+                                                <div class="circle-dot"></div>
+                                                <h6 class="timeline-date"><i class="fa fa-calendar"></i> 2018 - 2021</h6>
+                                                <h4 class="timeline-title">BSc Forensic Science and Cyber Security</h4>
+                                                <h5 class="organization-name">Dr. Babasaheb Ambedkar Marathwada University</h5>
+                                                <p class="timeline-text">Completed with a percentage of 70% (Result: Pass Class Distinction).</p>
+                                            </div>
+                                            <!-- Timeline-item-end -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-title padd-15">
+                                <h2 class="title">Experience</h2>
+                                <div class="row">
+                                    <div class="timeline-box padd-15">
+                                        <div class="timeline shadow-dark">
+                                            <!-- Experience Item -->
+                                            <div class="timeline-item">
+                                                <div class="circle-dot"></div>
+                                                <h6 class="timeline-date"><i class="fa fa-calendar"></i> Nov. (2022) - Present</h6>
+                                                <h4 class="timeline-title">Associate Consultant Information Security</h4>
+                                                <h5 class="organization-name">Anzen Technologies Pvt. Ltd.</h5>
+                                                <p class="timeline-text"><b>Activities:</b></p>
+                                                <ul class="timeline-text">
+                                                    <li>Conducting mobile application security assessments.</li>
+                                                    <li>Performing web application security testing to identify vulnerabilities.</li>
+                                                    <li>Executing API security assessments and penetration testing.</li>
+                                                    <li>Conducting Network VAPT to evaluate security posture.</li>
+                                                    <li>Providing recommendations to mitigate identified security risks.</li>
+                                                    <li>Assisting teams in implementing effective security measures.</li>
+                                                </ul>
+                                            </div>
+                                            <!-- Timeline-item-end -->
+                                            <div class="timeline-item">
+                                                <div class="circle-dot"></div>
+                                                <h6 class="timeline-date"><i class="fa fa-calendar"></i> June - July (2021)</h6>
+                                                <h4 class="timeline-title">Cyber Security Trainee</h4>
+                                                <h5 class="organization-name">Matfly Solution Pvt. Ltd.</h5>
+                                                <p class="timeline-text"><b>Activities:</b></p>
+                                                <ul class="timeline-text">
+                                                    <li>Performing Vulnerability Assessment.</li>
+                                                    <li>Conducting Network VAPT.</li>
+                                                    <li>Utilizing tools like Nessus, Nmap, SQLMap, and Burp Suite.</li>
+                                                </ul>
+                                            </div>
+                                            <!-- Timeline-item-end -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <style>
+                            .timeline-box {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 15px;
+                            }
+                            .timeline {
+                                background: #fff;
+                                border-radius: 8px;
+                                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                                padding: 15px;
+                            }
+                            .timeline-item {
+                                margin-bottom: 20px;
+                            }
+                            .circle-dot {
+                                height: 10px;
+                                width: 10px;
+                                background-color: #333;
+                                border-radius: 50%;
+                                display: inline-block;
+                                margin-right: 10px;
+                            }
+                            .title {
+                                font-size: 24px;
+                                margin-bottom: 20px;
+                            }
+                            .timeline-date {
+                                font-weight: bold;
+                                color: #333;
+                            }
+                            .timeline-title {
+                                font-size: 18px;
+                                margin: 5px 0;
+                            }
+                            .organization-name {
+                                font-size: 16px;
+                                color: #555;
+                                margin: 0;
+                            }
+                            .timeline-text {
+                                margin: 5px 0;
+                            }
+                        </style>  
+                    </section>                        
+        <!--About Section End-->
+        <!--Service Section-->
+        <section class="service section" id="services"> 
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>My Achievements</h2>
+                    </div>
+                    <div class="row">
+                        <div class="awards padd-15">
+                            <style>
+                                .heading {
+                                    color: #333; /* Deep grey color */
+                                    text-align: left; /* Align text to the left */
+                                    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+                                    margin: 20px 0; /* Margin around the heading */
+                                }
+                            </style>
+                                                     
+                            <div class="card-container">
+                                <!-- Award Item 1: Netflix -->
+                                <div class="award-card shadow-dark">
+                                    <div class="icon-container">
+                                        <img src="./images/netflix.jpeg" alt="Netflix Icon" class="icon" />
+                                    </div>
+                                    <div class="link-container">
+                                        <a target="_blank" href="https://drive.google.com/file/d/1KBUScEl87GTnyXkWuB2c6jmTzWI8aAGO/view?usp=drivesdk" class="link" onmouseover="bleep.play()" onclick="whistle.play()">Hall Of Fame</a>
+                                    </div>
+                                </div>
+                                <!-- Award Item 2: Google -->
+                                <div class="award-card shadow-dark">
+                                    <div class="icon-container">
+                                        <img src="./images/google.jpeg" alt="Google Icon" class="icon" />
+                                    </div>
+                                    <div class="link-container">
+                                        <a target="_blank" href="https://www.exploit-db.com/ghdb/8432" class="link" onmouseover="bleep.play()" onclick="whistle.play()">Hall Of Fame</a>
+                                    </div>
+                                </div>
+                                <!-- Award Item 3: Byte Blogger -->
+                                <div class="award-card shadow-dark">
+                                    <div class="icon-container">
+                                        <img src="./images/byteblogger.jpeg" alt="Byte Blogger Icon" class="icon" />
+                                    </div>
+                                    <div class="link-container">
+                                        <a target="_blank" href="https://bytebloggerbase.com/hall-of-fame-reward" class="link" onmouseover="bleep.play()" onclick="whistle.play()">Hall Of Fame</a>
+                                    </div>
+                                </div>
+                                <!-- Award Item 4: Google -->
+                                <div class="award-card shadow-dark">
+                                    <div class="icon-container">
+                                        <img src="./images/google.jpeg" alt="Google Icon" class="icon" />
+                                    </div>
+                                    <div class="link-container">
+                                        <a target="_blank" href="https://www.exploit-db.com/ghdb/8433" class="link" onmouseover="bleep.play()" onclick="whistle.play()">Hall Of Fame</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <style>
+                        .card-container {
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 15px;
+                        }
+                        .award-card {
+                            background: #fff;
+                            border-radius: 8px;
+                            padding: 20px;
+                            flex: 1 1 calc(25% - 15px);
+                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                            transition: transform 0.2s;
+                            text-align: center;
+                            border: 1px solid #ddd; /* Added border */
+                        }
+                        .award-card:hover {
+                            transform: scale(1.05);
+                        }
+                        .icon-container {
+                            margin-bottom: 10px;
+                        }
+                        .icon {
+                            width: 80px; /* Increased icon size */
+                            height: 80px; /* Ensure height matches width for consistency */
+                            object-fit: contain; /* Maintain aspect ratio */
+                            filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3)); /* Add sharpness */
+                        }
+                        .link-container {
+                            margin-top: 10px; /* Space above the link */
+                        }
+                        .link {
+                            font-size: 14px; /* Smaller font size for Hall Of Fame */
+                            color: #007bff; /* Link color */
+                            text-decoration: none;
+                            font-weight: bold; /* Bold text */
+                        }
+                        .link:hover {
+                            text-decoration: underline;
+                        }
+                    </style>
+            </section>
+        <!--Service Section End-->
+
+        <!--Portfolio Section-->
+        <section class="portfolio section" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>My Cert's</h2>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="portfolio-filter padd-15">
+                        <!--
+                        <button type="button" class="active" data-filter="all">All</button>
+                        <button type="button" data-filter="web-design">Web-design</button>
+                        <button type="button" data-filter="photography">Photography</button>
+                        <button type="button" data-filter="wordpress">Wordpress</button>
+                        -->
+                    </div>
+                </div>
+                <div class="row portfolio-items">
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/1.jpeg" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By The SecOps Group</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="wordpress" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/1.0.jpeg" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By APIsec Univesity</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="photography" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/2.jpeg" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By Information Sharing & Analysis Center</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/3.jpeg" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By EC-Council</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/4.jpeg" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By CISCO</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="wordpress" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/5.jpeg" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By Raksha-Shakti University</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/6.jpeg" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By Infosys</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/8.jpeg" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By Mastercard</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/10.jpeg" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By ISRO</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/11.jpeg" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By Cyber Cell</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/12.jpeg" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By Fireshark</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/13.jpeg" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By Cybrary</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->      
+        </section>
+        <!--Contact Section-->
+        <section class="contact section" id="contact">
+                <div class="container">
+                    <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>Contact Me</h2>
+                    </div>
+                    </div>
+                <div class="row">
+                    <!--Contact info item-->
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-phone"></i></div>
+                        <h4>Call Me On</h4>
+                        <p>+91 8263031544 </p>
+                    </div>
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-envelope"></i></div>
+                        <h4>Email</h4>
+                        <p>rcluex@gmail.com</p>
+                    </div>
+                    <!--Contact info item End-->
+                 </div>
+                    
+                    <div class="row">
+                        <form class="contact-form padd-15">
+                            <div class="row">
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Subject">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12">
+                                    <div class="form-group">
+                                    <textarea type="text" class="form-control" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 padd-15">
+                                <button type="submit" class="btn" onmouseover="button.play()" onclick="whistle.play()">Send Message</button>
+                                </div>
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <!--Contact Form End-->
+                
+                </div> 
+        </section>       
+        <!--Contact Section End-->
+    </div>
+    <!--Main content end-->
+</div>
+<!--Main Container-->
+
+<!--LightBox-->
+<div class="lightbox ">
+    <div class="lightbox-content">
+        <div class="lightbox-close">&times;</div>
+        <img src="./images/snake.gif" class="lightbox-img" onclick="nextItem()">
+        <div class="lightbox-caption">
+            <div class="caption-text"></div>
+            <div class="caption-counter"></div>
+        </div>
+
+    </div>
+    <div class="lightbox-controls">
+        <div class="prev-item" onclick="prevItem()"><i class="fa fa-angle-left"></i></div>
+        <div class="next-item" onclick="nextItem()"><i class="fa fa-angle-right"></i></div>
+    </div>
+</div>
+<!--LightBox End-->
+
+<!--Live Stle Switcher-->
+<div class="style-switcher">
+    <div class="toggle-style-switcher" onclick="bleep.play()">
+        <i class="fa fa-cog fa-spin" onclick="bleep.play()"></i>
+    </div>    
+    <h5>Style Switcher</h5>
+    <ul>
+        <li><a href="javascript:void(0);" title="pink" style="background-color: #ec1839;" onclick="setActiveStyle('pink')"></a></li>
+        <li><a href="javascript:void(0);" title="blue" style="background-color: #2196f3;" onclick="setActiveStyle('blue')"></a></li>
+        <li><a href="javascript:void(0);" title="green" style="background-color: #72b626;" onclick="setActiveStyle('green')"></a></li>
+        <li><a href="javascript:void(0);" title="orange" style="background-color: #fa5b07;" onclick="setActiveStyle('orange')"></a></li>
+        <li><a href="javascript:void(0);" title="yellow" style="background-color: #ffb400;" onclick="setActiveStyle('yellow')"></a></li>
+    </ul>
+    <h5>Body Skin</h5>
+    <label>
+        <input type="radio" class="body-skin" name="body-style" value="light" checked="true" onclick="whistle.play()">
+        Light
+    </label>
+    <label>
+        <input type="radio" class="body-skin" name="body-style" value="dark" onclick="whistle.play()">
+        Dark
+    </label>
+</div>
+
+<!--Live Style Switcher End here-->
+
+<script src="js/script.js"></script>
+<script src="./js/styleSwitcher.js"></script>
+
+</body>
+</html>
